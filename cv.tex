@@ -1,6 +1,5 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[inline]{enumitem}
-\setlist[itemize]{topsep=6pt}
 \usepackage{titlesec}
 \titleformat{\subsection}[block]{\Large\bfseries\filcenter}{}{1em}{}
 \usepackage[nohead,nofoot,hmargin=2cm,vmargin=1cm]{geometry}
@@ -16,6 +15,8 @@
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
+\usepackage{titlesec}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
 
 \setlength\parindent{0pt}
 %course/job title ; employer/institution ; dates
@@ -23,9 +24,9 @@
 \hfill#3\\[2pt]}
 %
 \renewcommand{\familydefault}{\sfdefault}
-
-
+\setlength{\parskip}{1em}
 \begin{document}
+
 \begin{tabularx}{\linewidth}{XX}
   \begin{flushleft}
     {\large MAX RUDIN}\\[\baselineskip]
@@ -40,7 +41,7 @@
   \end{flushright}
 \end{tabularx}
 
-\rule{\textwidth}{1pt}
+\hrule
 
 \subsection*{Summary}
 
@@ -135,8 +136,6 @@ the spot. Working to tight schedules, while also being careful.
 Experience includes: Working as a team whilst sticking to deadlines. 
 Keeping organised and prioritising the workload.
 
-
-
 \subsection*{Additional Information}
 
 I have participated in Ultimate Frisbee teams throughout my university
@@ -144,9 +143,7 @@ career. At UWE I participated in national championships, and for my final year
 I am captain of the club and have been responsible for recruiting new members,
 organisation fixtures and travel and accommodation for teams.
 
-
 I am a student member of the Institute of Environmental Sciences.
-
 
 Qualifications:
 \begin{itemize}
